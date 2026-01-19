@@ -11454,7 +11454,7 @@ div {
   margin-bottom: 0px;
 }
 .contact-main .content a {
-  text-transform: lowercase;
+  text-transform: none;
   font-weight: 500;
 }
 .contact-main .content a:hover {
