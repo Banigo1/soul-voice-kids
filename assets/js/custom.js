@@ -3,8 +3,7 @@
 
  * template name: Soul Voice kids
  * version: 1.0
- * description: Nonprofit NGO Fundraising HTML5 Template
- * author: wowtheme7
+ * description:  NGO
  * author-url: https://themeforest.net/user/wowtheme7
 
     ==================================================
@@ -134,50 +133,6 @@
      * 03. custom cursor
      * ======================================
      */
-    if ($(".mouseCursor").length > 0) {
-      function itCursor() {
-        var myCursor = jQuery(".mouseCursor");
-        if (myCursor.length) {
-          if ($("body")) {
-            const e = document.querySelector(".cursor-inner"),
-              t = document.querySelector(".cursor-outer");
-            let n,
-              i = 0,
-              o = !1;
-            (window.onmousemove = function (s) {
-              o ||
-                (t.style.transform =
-                  "translate(" + s.clientX + "px, " + s.clientY + "px)"),
-                (e.style.transform =
-                  "translate(" + s.clientX + "px, " + s.clientY + "px)"),
-                (n = s.clientY),
-                (i = s.clientX);
-            }),
-              $("body").on(
-                "mouseenter",
-                "button, a, .cursor-pointer",
-                function () {
-                  e.classList.add("cursor-hover"),
-                    t.classList.add("cursor-hover");
-                }
-              ),
-              $("body").on(
-                "mouseleave",
-                "button, a, .cursor-pointer",
-                function () {
-                  ($(this).is("a", "button") &&
-                    $(this).closest(".cursor-pointer").length) ||
-                    (e.classList.remove("cursor-hover"),
-                    t.classList.remove("cursor-hover"));
-                }
-              ),
-              (e.style.visibility = "visible"),
-              (t.style.visibility = "visible");
-          }
-        }
-      }
-      itCursor();
-    }
 
     /**
      * ======================================
@@ -226,7 +181,7 @@
               complete: function () {
                 $("html, body").css("scroll-behavior", "smooth");
               },
-            }
+            },
           );
         return false;
       });
@@ -328,7 +283,7 @@
       $(".mobile-menu__backdrop").removeClass("mobile-menu__backdrop-active");
       $(".mobile-menu__wrapper").addClass("nav-fade-active");
       $(".mobile-menu .navbar__dropdown-label").removeClass(
-        "navbar__item-active"
+        "navbar__item-active",
       );
       $(".mobile-menu .navbar__sub-menu").slideUp(0);
     });
@@ -347,7 +302,7 @@
       $(".mobile-menu__backdrop").removeClass("mobile-menu__backdrop-active");
       $(".mobile-menu__wrapper").addClass("nav-fade-active");
       $(".mobile-menu .navbar__dropdown-label").removeClass(
-        "navbar__item-active"
+        "navbar__item-active",
       );
       $(".mobile-menu .navbar__sub-menu").slideUp(0);
       $(".open-offcanvas-nav").removeClass("open-offcanvas-nav-active");
@@ -1039,10 +994,10 @@
 
         const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
         const hours = Math.floor(
-          (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
         );
         const minutes = Math.floor(
-          (timeRemaining % (1000 * 60 * 60)) / (1000 * 60)
+          (timeRemaining % (1000 * 60 * 60)) / (1000 * 60),
         );
         const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
@@ -1260,7 +1215,7 @@
     if (imageParallax.length > 0) {
       $(".parallax-image").each(function () {
         $(this).wrap(
-          '<div class="parallax-image-wrap"><div class="parallax-image-inner"></div></div>'
+          '<div class="parallax-image-wrap"><div class="parallax-image-inner"></div></div>',
         );
         $(".parallax-image-wrap").css({
           overflow: "hidden",
@@ -1411,7 +1366,7 @@
           },
           {
             width: target,
-          }
+          },
         );
         ax_bartl.from(
           p,
@@ -1421,7 +1376,7 @@
               textContent: 5,
             },
           },
-          "<"
+          "<",
         );
       });
     }
@@ -1461,7 +1416,7 @@
                   end: "bottom 20%",
                   toggleActions: "play none none none",
                 },
-              }
+              },
             );
 
             gsap.fromTo(
@@ -1478,7 +1433,7 @@
                   percentDisplay.textContent =
                     Math.round(percentDisplay.textContent) + "%";
                 },
-              }
+              },
             );
           }
         }
@@ -1701,13 +1656,13 @@
       }
       document.getElementById("days").innerText = Math.floor(distance / day);
       document.getElementById("hours").innerText = Math.floor(
-        (distance % day) / hour
+        (distance % day) / hour,
       );
       document.getElementById("minutes").innerText = Math.floor(
-        (distance % hour) / minute
+        (distance % hour) / minute,
       );
       document.getElementById("seconds").innerText = Math.floor(
-        (distance % minute) / second
+        (distance % minute) / second,
       );
     }, 1000);
   })();
