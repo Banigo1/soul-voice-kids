@@ -5675,7 +5675,7 @@ div {
  --------- (5.02) difference section styles start ---------
  ==== */
 .difference {
-  /* padding-top: 100px; */
+  padding-bottom: 100px;
   position: relative;
   z-index: 1;
   overflow: hidden;
