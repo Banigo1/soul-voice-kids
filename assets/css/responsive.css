@@ -386,6 +386,7 @@
   .error__content,
   .soon {
     padding: 120px 0px;
+    padding-top: 70px;
   }
   .cm-details .blog-comment {
     padding-top: 115px;

@@ -347,6 +347,7 @@ h1 {
 h2 {
   font-size: 30px;
   line-height: 40px;
+  text-transform: none;
 }
 
 h3 {
@@ -362,11 +363,13 @@ h4 {
 h5 {
   font-size: 20px;
   line-height: 30px;
+  text-transform: none;
 }
 
 h6 {
   font-size: 18px;
   line-height: 28px;
+  text-transform: none;
 }
 
 h1 a,
@@ -942,14 +945,11 @@ div {
   border-radius: inherit;
 }
 
-.title-animation {
-  text-transform: lowercase !important;
-}
 .title-animation > div > div:nth-child(1) {
-  text-transform: uppercase;
+  text-transform: none;
 }
 .title-animation > span > div > div:nth-child(1) {
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .off-canvas {
@@ -3800,6 +3800,7 @@ div {
 .banner .banner__content p,
 .banner .banner__content .banner__content-cta {
   opacity: 0;
+  text-transform: none;
   -webkit-transform: translateX(-20px);
   -ms-transform: translateX(-20px);
   transform: translateX(-20px);
@@ -5803,7 +5804,8 @@ div {
   }
 }
 .difference-two {
-  padding: 100px 0px;
+  padding: 50px 0px;
+  padding-top: 50px;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -5814,7 +5816,7 @@ div {
 .difference-two .difference-two__thumb {
   text-align: end;
   position: relative;
-  min-width: 60vw;
+  /* min-width: 60vw; */
   direction: ltr;
 }
 .difference-two .difference-two__thumb .thumb-lg {
@@ -6307,7 +6309,7 @@ div {
  --------- (5.03) help section styles start ---------
  ==== */
 .help {
-  padding: 100px 0px;
+  padding: 100px;
   overflow: hidden;
   position: relative;
   z-index: 1;
@@ -7718,7 +7720,8 @@ div {
   color: var(--white);
 }
 .cta-section span {
-  font-size: 14px;
+  font-size: 18px;
+  text-transform: none;
 }
 .cta-section h3 {
   margin-top: 5px;
@@ -13018,6 +13021,7 @@ div {
   font-weight: 700;
   color: var(--black);
   margin-top: -8px;
+  text-transform: none;
 }
 .volunteer .volunteer__form p {
   max-width: 400px;
@@ -16589,6 +16593,7 @@ div {
 }
 .rtl .fc-goal .title-animation {
   text-align: center;
+  text-transform: none;
 }
 @media (min-width: 1200px) {
   .rtl .offset-xl-2 {
